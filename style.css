@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: fac;
+    src: url();
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+:root {
+    --fundo: #ffefd360;
+    --escura: #212227;
+    --verde: #42858C;
+    --vinho: #A71D31;
+    --font-padron: Arial, Verdana, Helvetica, Sans-serif;
+    --font-android: 'Android, Cursive';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a.externo::after {
+    content: '\00A\1F517';
+}
+main {
+    margin: 15px 0px;
+    text-align: justify;
+}
+header {
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, var(--verde), var(--escura));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 25px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.808);
+}
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.705);
+}
+nav {
+    background-color: var(--escura);
+    padding: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.541);
+}
+nav > a {
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .3s;
+}
+nav > a:hover {
+    background-image: var(--fundo);
+    color: var(--vinho);
+}
+main {
+    min-height: 280px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-image: var(--fundo);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    border-bottom-right-radius: var(--vinho);
+}
+main h1 {
+    color: var(--escura);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h2 {
+    color: whitesmoke;
+    font-family: var(--font-padron);
+    background-image: linear-gradient(to right, var(--verde), transparent);
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong {
+    color: var(--vinho);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--escura);
+    background-color: var(--fundo);
+    padding: 2px 7px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--vinho);
+}
+main img {
+    width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+aside {
+    background-color: var(--escura);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+aside > h3 {
+    text-align: center;
+    background-color: var(--escura);
+    color: var(--fundo);
+    padding: 7px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer {
+    background-color: rgba(240, 255, 240, 0.623);
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+}
+footer a {
+    color: var(--escura);
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--vinho);
+}
+
